@@ -2,9 +2,9 @@
 header{background:#03045E;color:#fff;padding:28px 20px;text-align:center}header img{width:84px;height:84px;border-radius:20px;background:#fff;padding:5px}
 header h1{margin:12px 0 0;font-size:1.6rem}main{max-width:760px;margin:0 auto;padding:24px 20px 60px}h2{color:#03045E;margin-top:2rem;font-size:1.25rem}
 a{color:#0047AB}li{margin:.3rem 0}footer{text-align:center;color:#586180;font-size:.9rem;padding:20px}.card{background:#fff;border-radius:16px;padding:16px 20px;box-shadow:0 2px 10px rgba(3,4,94,.08)}</style></head><body>
-<header><img src="marka-logo.png" alt="Marka"><h1>Privacy Policy</h1><div>Last updated: November 19, 2026</div></header><main><h2>1. Introduction</h2>
+<header><img src="marka-logo.png" alt="Marka"><h1>Privacy Policy</h1><div>Last updated: November 27, 2026</div></header><main><h2>1. Introduction</h2>
 <p>Avincus Software Development Services (&#x27;we&#x27;, &#x27;our&#x27;, or &#x27;us&#x27;) publishes the Marka mobile application (&#x27;the App&#x27;). This Privacy Policy explains what information the App handles and how it is protected.</p>
-<p>In short: Marka works offline and your exam and student data stays on your device and is not uploaded to us. The only thing we keep about you is your Google sign-in account (see section 2).</p>
+<p>In short: Marka works offline and your exam and student data stays on your device and is not uploaded to us. The only things that go over the internet are your Google sign-in account (see section 2) and the content and update checks in section 7. None of them carries exam, student or score information.</p>
 <h2>2. Your Marka Account</h2>
 <p>Marka asks you to sign in with your Google account. We use it to recognise your account and to help protect Marka against unauthorised copies. When you sign in, Google and Firebase Authentication give us:</p>
 <ul>
@@ -13,6 +13,7 @@ a{color:#0047AB}li{margin:.3rem 0}footer{text-align:center;color:#586180;font-si
 <li>When you signed in</li>
 </ul>
 <p>We also keep a small record for your account: the date it was created and the date you last used the App. These records contain no exam, student or score information, and are not used for advertising or shared with anyone. You can sign out or delete your account at any time in Settings. Deleting it removes your account and this record; your data on your device is not affected.</p>
+<p>To stop the free trial being repeated on the same phone, we also keep a one-way hash of your phone&#x27;s identifier (it cannot be turned back into that identifier) and the date Marka first saw the phone. It holds nothing about you.</p>
 <h2>3. Information Stored on Your Device</h2>
 <p>When you use the App, the following is created and stored only on your device:</p>
 <ul>
@@ -36,13 +37,17 @@ a{color:#0047AB}li{margin:.3rem 0}footer{text-align:center;color:#586180;font-si
 <h2>6. Permissions</h2>
 <ul>
 <li>Camera: to scan answer sheets</li>
-<li>Notifications (optional): to show reminders and status messages</li>
+<li>Internet: to sign in, to download DepEd competencies and forms, and to look for app updates. Scanning, grading and reports work without it</li>
+<li>Notifications (optional): to show reminders, status messages and a notice when a new version of Marka is ready</li>
 <li>Storage / file access: to save and share exports and backups you request</li>
 <li>Biometrics or screen lock (optional): for the app lock feature</li>
+<li>Install updates (website version only): so Marka can install its own updates after you approve them. Android also asks you to allow this once. It is not used to install anything else</li>
 </ul>
 <h2>7. Third-Party Components</h2>
 <p>Marka uses Google ML Kit for text and barcode recognition. This recognition runs on your device. Images are not sent to us.</p>
 <p>Marka uses Google Sign-In and Firebase (a Google service) to sign you in and to hold your account record. Their handling of that information is covered by Google&#x27;s privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<p>When your phone is online, Marka downloads a small public file of DepEd competencies, forms and news from our server. The request carries no information about you, your students or your exams, only the standard connection details any web request has. You can turn automatic updates off in Settings &gt; DepEd updates.</p>
+<p>App updates. If you installed Marka from the Marka website, the App looks for new versions about once a day and whenever you open it. It reads a small public file hosted on GitHub Pages and, when you update or have automatic download on Wi-Fi turned on, downloads the update from GitHub Releases. These requests carry no information about you, your students or your exams, only the standard connection details any web request has, which GitHub receives under its own privacy statement: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement</a>. Each download is checked against its published fingerprint and signature before it is installed, and is kept in the App&#x27;s private storage only until it is installed. You can turn off automatic download and update notifications in Settings &gt; App updates. If you installed Marka from Google Play, updates come through Google Play and the App does not look for them itself.</p>
 <p>The App does not contain advertising and does not sell or share your data for marketing.</p>
 <h2>8. Sharing and Disclosure</h2>
 <p>We do not sell, rent or share your student data. Files you export (CSV, PDF, backups) go only where you choose to send them.</p>
